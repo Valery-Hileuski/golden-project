@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+/* ========================== */
+html,
+body {
+    font-family: Montserrat;
+    height: 100%;
+    line-height: 1;
+    font-size: 14px;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/* ============================ */
+[class*="__container"] {
+    max-width: 940px;
+    margin: 0px auto;
+}
+
+/* ============================ */
+.main {
+    flex: 1 1 auto;
+}
+
+/* HEADER =========================================================== */
+.header {
+    background-image: url(img/Background\ Image.png);
+    background-size: cover;
+    min-height: 700px;
+}
+
+.header__container {}
+
+.header__header {
+    height: 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 80px;
+    height: 30px;
+}
+
+.header__menu {}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__item {}
+
+.menu__item:not(:first-child) {
+    margin-left: 40px;
+}
+
+.menu__link {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.header__promo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 585px;
+    color: #ffffff;
+}
+
+.header__promo h1 {
+    font-size: 40px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+.header__promo p {
+    font-size: 75px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 242px;
+    height: 65px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #fed136;
+    border: none;
+    border-radius: 4px;
+    margin-top: 60px;
+    transition: background-color 0.3s ease 0s;
+}
+
+.header__button:hover {
+    background-color: #caa008;
+}
+
+/* MAIN ========================================================*/
+
+.main h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main p {
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* SERVICES */
+
+.services {
+    min-height: 560px;
+}
+
+.cervices__title {
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.services__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services__item {
+    width: 270px;
+    text-align: center;
+
+}
+
+.services__item h3 {
+    font-size: 18px;
+    margin: 25px 0px;
+}
+
+.services__item p {
+    font-size: 14px;
+    font-style: normal;
+}
+
+/* PORTFOLIO ======================================================*/
+
+.portfolio {
+    min-height: 1220px;
+    background-color: #f7f7f7;
+}
+
+.portfolio__title {
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.portfolio__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio__item {
+    width: 290px;
+}
+
+.portfolio__caption {
+    background-color: #ffffff;
+    height: 90px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio__caption a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #696969;
+}
+
+.portfolio__caption a:hover {
+    color: #0d0c0c;
+}
+
+.portfolio__caption span {
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* ABOUT============================================== */
+
+.about {
+    min-height: 1660px;
+}
+
+.about__title {
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about__item {
+    width: 530px;
+    margin-bottom: 90px;
+}
+
+.about__text {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 35px;
+    line-height: 1.2;
+}
+
+.about__text h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.about__text p {
+    font-size: 14px;
+}
+
+.about__item:nth-child(odd) {
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+.about__item:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: left;
+    margin-right: 35px;
+    margin-left: auto;
+}
+
+.about__continues {
+    display: flex;
+    justify-content: center;
+}
+
+.about__item-continues {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.about__item-continues p {
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.about__text-continues {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+}
+
+/* OUR-TEAM============================================= */
+
+.our-team {
+    min-height: 820px;
+    background-color: #f9f9f9;
+}
+
+.our-team__title {
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.our-team__block {
+    display: flex;
+    justify-content: space-around;
+}
+
+.our-team__item img {
+    margin-bottom: 30px;
+}
+
+.our-team__name {
+    text-align: center;
+}
+
+.our-team__social-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.our-team__social-icon a:not(:last-child) {
+    margin-right: 10px;
+}
+
+.our-team__name h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.our-team__name p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #a0a0a0;
+}
+
+.our-team__description {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.our-team__description p {
+    width: 600px;
+    font-size: 16px;
+    color: #a0a0a0;
+}
+
+/*  ???????????????????????????????????????????*/
+/* .our-team__social-icon a:hover {
+    background-image: url(img/social_icon/Twitter_hover.png);
+} */
+
+/* LOGOS================================================ */
+
+.logos {
+    min-height: 165px;
+    display: flex;
+    align-items: center;
+}
+
+.logos__img:not(:last-child) {
+    margin-right: 45px;
+}
+
+.logos__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTACT============================================== */
+
+.contact {
+    min-height: 680px;
+    background-image: url(img/Map\ Image_back.png);
+}
+
+.contact__title {
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.contact__field input {
+    width: 455px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.contact__field textarea {
+    width: 455px;
+    height: 210px;
+    border: none;
+    border-radius: 4px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+}
+
+input::placeholder {
+    font-size: 14px;
+    font-weight: bold;
+    color: #bbbbbb;
+    text-transform: uppercase;
+    padding: 19px 0px 19px 19px;
+}
+
+textarea::placeholder {
+    font-size: 16px;
+    font-weight: bold;
+    color: #bbbbbb;
+    text-transform: uppercase;
+    padding: 15px 0px 0px 19px;
+}
+
+.contact__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 242px;
+    height: 65px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #fed136;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease 0s;
+}
+
+.contact__button:hover {
+    background-color: #caa008;
+}
+
+.contact__button-block {
+    display: flex;
+    justify-content: center;
+}
+
+/* FOOTER============================================ */
+
+.footer {
+    min-height: 90px;
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+}
+
+.footer__content p {
+    padding: 40px 0px 40px 0px;
+    margin-right: 120px;
+}
+
+.footer__content a:not(:last-child) {
+    margin-right: 10px;
+}
