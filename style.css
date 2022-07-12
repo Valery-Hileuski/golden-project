@@ -44,12 +44,6 @@ body {
     flex: 1 1 auto;
 }
 
-@media (max-width:940px) {
-    .header__promo p {
-        text-align: center;
-    }
-}
-
 /* HEADER =========================================================== */
 .header {
     background-image: url(img/Background\ Image.png);
