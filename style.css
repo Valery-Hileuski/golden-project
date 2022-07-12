@@ -36,11 +36,18 @@ body {
 [class*="__container"] {
     max-width: 940px;
     margin: 0px auto;
+    /* padding: 0px 15px; */
 }
 
 /* ============================ */
 .main {
     flex: 1 1 auto;
+}
+
+@media (max-width:940px) {
+    .header__promo p {
+        text-align: center;
+    }
 }
 
 /* HEADER =========================================================== */
@@ -49,8 +56,6 @@ body {
     background-size: cover;
     min-height: 700px;
 }
-
-.header__container {}
 
 .header__header {
     height: 115px;
@@ -64,13 +69,9 @@ body {
     height: 30px;
 }
 
-.header__menu {}
-
 .menu__list {
     display: flex;
 }
-
-.menu__item {}
 
 .menu__item:not(:first-child) {
     margin-left: 40px;
